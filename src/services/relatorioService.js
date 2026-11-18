@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // FastAPI (Python) que gera o relatório Excel
 const reportHttp = axios.create({
-  baseURL: import.meta.env.VITE_REPORT_URL ?? 'http://localhost:8000',
+  baseURL: import.meta.env.VITE_REPORT_URL ?? 'https://relatorio-equipamentocontroller.onrender.com',
   responseType: 'blob', // o .xlsx é binário: sem isso o arquivo corrompe
 })
 
